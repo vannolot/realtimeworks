@@ -630,6 +630,114 @@ nav.scrolled {
 
 
 /* ==========================================================================
+   CONTACT
+   ========================================================================== */
+
+.contact {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: var(--section-pad) 0;
+}
+
+.contact-left {
+  padding: 0 var(--page-pad);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4.5vw, 60px);
+  font-weight: 300;
+  line-height: 1.05;
+}
+
+.contact-title em {
+  font-style: normal;
+  color: var(--gray-600);
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: var(--gray-600);
+  line-height: 1.7;
+  max-width: 340px;
+}
+
+.contact-right {
+  padding: 0 var(--page-pad);
+}
+
+/* --- Form --- */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--gray-600);
+}
+
+.form-input,
+.form-textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  resize: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--gray-400);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--black);
+}
+
+.form-textarea {
+  line-height: 1.6;
+}
+
+.form-submit {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 
@@ -757,6 +865,24 @@ footer {
 
   .cta-right {
     height: 280px;
+  }
+
+  /* Contact */
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    border-right: none;
+    padding: 0 var(--page-pad) 48px;
+  }
+
+  .contact-right {
+    padding: 0 var(--page-pad);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
   /* Footer */
