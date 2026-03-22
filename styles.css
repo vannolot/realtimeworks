@@ -575,7 +575,8 @@ nav.scrolled {
   padding: 80px var(--page-pad);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 48px;
   border-right: 1px solid var(--line);
 }
 
