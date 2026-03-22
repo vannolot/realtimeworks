@@ -279,6 +279,24 @@ nav.scrolled {
   border-color: var(--black);
 }
 
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gray-200);
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 14px 24px;
+  transition: background 0.2s;
+}
+
+.btn-secondary:hover {
+  background: var(--gray-400);
+}
+
 /* --- Prawa kolumna (zdjęcie) --- */
 .hero-right {
   position: relative;
