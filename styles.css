@@ -859,11 +859,11 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .cta-left {
-    border-right: none;
-    padding: 48px var(--page-pad);
-  }
-
+.cta-left {
+  border-right: none;
+  padding: 48px var(--page-pad);
+  gap: 48px;
+}
   .cta-right {
     height: 280px;
   }
