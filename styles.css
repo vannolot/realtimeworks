@@ -846,6 +846,11 @@ footer {
   flex-wrap: wrap;
 }
 
+   .btn-primary,
+   .bnt.secondary {
+      width: auto;
+   }
+
   /* Section header */
   .section-header {
     flex-direction: column;
