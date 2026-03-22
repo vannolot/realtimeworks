@@ -297,6 +297,10 @@ nav.scrolled {
   background: var(--gray-400);
 }
 
+.btn-primary, .btn-secondary {
+  white-space: nowrap;
+}
+
 /* --- Prawa kolumna (zdjęcie) --- */
 .hero-right {
   position: relative;
