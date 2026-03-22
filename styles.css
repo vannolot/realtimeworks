@@ -835,11 +835,12 @@ footer {
     height: 60vw;
   }
 
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
+.hero-actions {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 
   /* Section header */
   .section-header {
