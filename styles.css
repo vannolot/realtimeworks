@@ -842,7 +842,7 @@ footer {
 .hero-actions {
   flex-direction: row;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
